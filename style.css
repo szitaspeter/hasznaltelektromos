@@ -1,0 +1,226 @@
+/* Alapértelmezett stílusok */
+body {
+    font-family: 'Arial', sans-serif; /* 'Ariel' helyett 'Arial' */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left h1 {
+    margin: 0; /* Távolság eltávolítása a címtől */
+    font-size: 24px; /* A cím méretének növelése */
+}
+
+nav {
+    display: flex;
+    margin-top: 10px;
+}
+
+nav a {
+    margin-right: 20px; /* Távolság a menüpontok között */
+    color: hsl(151, 86%, 36%);
+    text-decoration: none;
+    font-size: 16px; /* Méret módosítása */
+}
+
+nav a:hover {
+    color: hsl(193, 68%, 51%);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Jobbra igazítás */
+    margin-right: 60px; /* Kisebb távolság a jobb oldaltól */
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Kijelentkezés gomb méretének növelése */
+    margin-left: 10px; /* Távolság a bal oldali elemektől */
+}
+
+.logout-button:hover {
+    color: #ff6347; /* Kijelentkezés gomb hover színe */
+}
+
+#main-content {
+    margin: 20px auto; /* Középre igazítás */
+    text-align: center; /* Középre igazítás */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%; /* Szélesség 100%-ra */
+    position: fixed;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #14652fb0;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea,
+select {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid hwb(120 12% 32%);
+    border-radius: 4px;
+}
+
+button {
+    background-color: hwb(60 80% 17%);
+    color: rgb(25, 229, 100);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: hsla(112, 88%, 41%, 0.814);
+}
+
+a {
+    color: hsl(151, 86%, 36%);
+    text-decoration: none;
+}
+
+a:hover {
+    color: hsl(193, 68%, 51%);
+}
+
+/* Dropdown gomb stílusok */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.advertisement-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advertisement {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex; /* Elemek elrendezése egy sornyi folytonos sorban */
+    justify-content: center; /* Képek középre igazítása */
+}
+
+.image-container img {
+    max-width: 200px; /* Példaként 200px maximális szélesség */
+    height: auto; /* Automatikus magasság beállítása a szélesség arányos változásával */
+    margin-right: 20px; /* Térköz a képek között */
+    border: 1px solid #ddd; /* Keret hozzáadása a képekhez */
+    padding: 5px; /* Kisebb belső tér a keret és a kép között */
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.gallery-image {
+    max-width: 80%;
+    max-height: 80%;
+}
+.gallery-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+    cursor: pointer;
+}
+.gallery-nav-left {
+    left: 10px;
+}
+.gallery-nav-right {
+    right: 10px;
+}
+
+button[type="submit"] {
+    visibility: visible;
+    position: relative;
+    z-index: 1000;
+}
+
+
